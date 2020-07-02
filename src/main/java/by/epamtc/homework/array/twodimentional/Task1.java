@@ -2,7 +2,7 @@ package by.epamtc.homework.array.twodimentional;
 
 public class Task1 {
     public static void main(String[] args) {
-        printMatrix(matrixFormation(6));
+        MatrixPrinter.print(matrixFormation(6));
     }
 
     private static int[][] matrixFormation(int n) {
@@ -24,18 +24,6 @@ public class Task1 {
                 }
             }
         }
-
-
-
         return matrix;
-    }
-
-    private static void printMatrix(int[][] matrixFormation) {
-        for (int i = 0; i < matrixFormation.length; i++) {
-            for (int j = 0; j < matrixFormation.length; j++) {
-                System.out.print(matrixFormation[i][j] + "\t");
-            }
-            System.out.println();
-        }
     }
 }
