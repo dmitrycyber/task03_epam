@@ -14,7 +14,7 @@ public class Task6 {
     private static int[][] formMagicSquare(int[][] sourceMatrix) {
         int[][] targetMatrix = sourceMatrix.clone();
 
-        while (!isMagicSquare(targetMatrix)){
+        while (!isMagicSquare(targetMatrix)) {
             int i1 = random.nextInt(targetMatrix.length);
             int j1 = random.nextInt(targetMatrix.length);
             int i2 = random.nextInt(targetMatrix.length);
@@ -38,7 +38,7 @@ public class Task6 {
                         !diagonalOneSum(matrix).equals(sumOfLine(matrix)) &&
                         !diagonalTwoSum(matrix).equals(sumOfLine(matrix))
 
-        ){
+        ) {
             return false;
         }
         return true;

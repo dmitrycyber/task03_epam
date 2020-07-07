@@ -11,7 +11,7 @@ public class Task4 {
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
-                matrix[i][j] = (int) Math.pow(array[j], i+1);
+                matrix[i][j] = (int) Math.pow(array[j], i + 1);
             }
         }
         return matrix;

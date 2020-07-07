@@ -9,18 +9,18 @@ public class Task1 {
         int[][] matrix = new int[n][n];
 
         for (int i = 0; i < n; i++) {
-            int num = 1;
-            int num2 = n;
-            if (i % 2 == 0){
+            int counter = 1;
+            int number = n;
+            if (i % 2 == 0) {
                 for (int j = 0; j < n; j++) {
-                    matrix[i][j] = num;
-                    num ++;
+                    matrix[i][j] = counter;
+                    counter++;
                 }
             }
-            if (i % 2 != 0){
+            if (i % 2 != 0) {
                 for (int j = 0; j < n; j++) {
-                    matrix[i][j] = num2;
-                    num2 --;
+                    matrix[i][j] = number;
+                    number--;
                 }
             }
         }

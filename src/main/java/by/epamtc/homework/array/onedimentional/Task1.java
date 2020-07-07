@@ -8,11 +8,13 @@ public class Task1 {
 
     private static int calcMaxSumAdjacentElements(int[] array) {
         int tempMaxSum = array[0] + array[1];
-        for (int i = 2; i < array.length-1; i++) {
-            if (tempMaxSum < array[i] + array [i+1]){
-                tempMaxSum = array[i] + array [i+1];
+
+        for (int i = 2; i < array.length - 1; i++) {
+            if (tempMaxSum < array[i] + array[i + 1]) {
+                tempMaxSum = array[i] + array[i + 1];
             }
         }
+
         return tempMaxSum;
     }
 

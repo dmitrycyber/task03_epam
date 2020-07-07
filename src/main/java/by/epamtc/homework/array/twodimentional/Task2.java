@@ -5,13 +5,13 @@ public class Task2 {
         MatrixPrinter.print(matrixFormation(6));
     }
 
-    private static int[][] matrixFormation(int n) {
-        int[][] matrix = new int[n][n];
+    private static int[][] matrixFormation(int size) {
+        int[][] matrix = new int[size][size];
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (i == j){
-                    matrix[i][j] = (i+1)*(j+2);
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (i == j) {
+                    matrix[i][j] = (i + 1) * (j + 2);
                 }
             }
         }

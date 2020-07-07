@@ -13,11 +13,11 @@ public class Task4 {
         for (int i = 1; i < array.length; i++) {
             int tempFrequency = 1;
             for (int j = 0; j < array.length; j++) {
-                if (array[i] == array[j]){
+                if (array[i] == array[j]) {
                     tempFrequency++;
                 }
             }
-            if (tempFrequency >= frequency && array[i] < tempNumber){
+            if (tempFrequency >= frequency && array[i] < tempNumber) {
                 tempNumber = array[i];
                 frequency = tempFrequency;
             }

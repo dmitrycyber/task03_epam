@@ -23,9 +23,11 @@ public class Task2 {
         return newArray;
     }
 
-    private static MinElementCountModel getMinElementCount(int[] array){
+    private static MinElementCountModel getMinElementCount(int[] array) {
         int tempMinElement = array[0];
+
         int countOfMinElement = 0;
+
         for (int value : array) {
             if (value == tempMinElement) {
                 countOfMinElement++;
@@ -35,6 +37,7 @@ public class Task2 {
                 countOfMinElement = 1;
             }
         }
+
         return new MinElementCountModel(tempMinElement, countOfMinElement);
     }
 }

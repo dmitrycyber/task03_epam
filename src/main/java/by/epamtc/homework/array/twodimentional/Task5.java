@@ -2,9 +2,9 @@ package by.epamtc.homework.array.twodimentional;
 
 public class Task5 {
     public static void main(String[] args) {
-        int[][] matrix1 = {{1,2,1}, {0,1,2}};
+        int[][] matrix1 = {{1, 2, 1}, {0, 1, 2}};
 
-        int[][] matrix2 = {{1,0}, {0,1}, {1, 1}};
+        int[][] matrix2 = {{1, 0}, {0, 1}, {1, 1}};
 
         MatrixPrinter.print(multiplyTwoMatrix(matrix1, matrix2));
         System.out.println();
@@ -12,7 +12,7 @@ public class Task5 {
     }
 
     private static int[][] multiplyTwoMatrix(int[][] matrix1, int[][] matrix2) {
-        if (matrix1[0].length != matrix2.length){
+        if (matrix1[0].length != matrix2.length) {
             System.out.println("Can't multiply");
             return null;
         }
@@ -27,6 +27,6 @@ public class Task5 {
             }
         }
         return resultMatrix;
-        
+
     }
 }

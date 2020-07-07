@@ -6,19 +6,18 @@ public class Task3 {
 
     }
 
-    private static int[][] matrixFormation(int n) {
-        int[][] matrix = new int[n][n];
+    private static int[][] matrixFormation(int size) {
+        int[][] matrix = new int[size][size];
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (n - i > n / 2) {
-                    if (j >= n - i || j < i) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (size - i > size / 2) {
+                    if (j >= size - i || j < i) {
                         continue;
                     }
                     matrix[i][j] = 1;
-                }
-                else {
-                    if (j < n - i - 1 || j >= i + 1) {
+                } else {
+                    if (j < size - i - 1 || j >= i + 1) {
                         continue;
                     }
                     matrix[i][j] = 1;
